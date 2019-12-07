@@ -1,0 +1,15 @@
+@mixin clearfix {
+    &::after{
+       content: "";
+       display: table;
+       clear: both; 
+    }
+}
+
+@mixin col-config {
+    background: red;
+    float: left;
+    &:not(:last-child) {
+        margin-right: $horizontal-gutter;
+    }
+}
